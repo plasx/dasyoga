@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'yogastudio.instructor',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'yogastudio.schema.schema',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
